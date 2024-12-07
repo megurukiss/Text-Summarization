@@ -41,4 +41,4 @@ class Assess(dspy.Signature):
     summary = dspy.InputField(desc="The summary text, evaluated based on whether the length, and style personalization preferences are met")
     length: int = dspy.InputField(desc="The maximum length of the summary")
     style: str = dspy.InputField(default="formal", desc="The style of the summary, either 'formal' or 'casual'")
-    score: int = dspy.OutputField(desc="The score of the summary, between 0 and 100")
+    score: int = dspy.OutputField(desc="The score of the summary, between 0 and 10")
